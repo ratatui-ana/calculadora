@@ -11,17 +11,19 @@ body{
     align-items: center;
 }
 .container{
-    height: 250px;
+    height: 280px;
     width: 200px;
     background-color: aquamarine;
-}
-.visor{
-    margin: 30px 10px 10px 10px;
-}
-.inp{
     border-radius: 20px;
+}
+.visorzinho{
+    margin: 30px 10px 10px 10px;
+    border-radius: 20px;
+    padding: 3px 10px 3px 0px;
     height: 25px;
     border: 1px solid grey;
+    background-color: #fff;
+    text-align: right;
 }
 .buttons{
     display: flex;
@@ -30,29 +32,20 @@ body{
 }
 .teclas__num{
     display: grid;
-    grid-template-columns: 30px 30px 30px;
-    grid-template-rows: 30px 30px 30px 30px;
+    grid-template-columns: 30px 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px 30px 30px;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
+    
 }
-.teclas__num .zero{
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
-.num{
+.num, .op{
     border-radius: 50px;
     border: 1px solid grey;
     color: rgb(5, 79, 57);
+    cursor: pointer;
 }
-.op{
-    border-radius: 50px;
-    border: 1px solid grey;
-    color: rgb(5, 79, 57);
-}
-.operacoes{
-    display: grid;
-    grid-template-columns: 30px;
-    grid-template-rows: 30px 30px;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+.igual {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 65px;
 }

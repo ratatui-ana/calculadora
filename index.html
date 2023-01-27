@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,38 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="visor">
-            <input type="text" class="inp" readonly>
+            <input type="text" class="visorzinho" id="visor" readonly />
         </div>
         <div class="buttons">
-        <div class="teclas__num">
-            <button class="num">1</button>
-            <button class="num">2</button>
-            <button class="num">3</button>
-            <button class="num">4</button>
-            <button class="num">5</button>
-            <button class="num">6</button>
-            <button class="num">7</button>
-            <button class="num">8</button>
-            <button class="num">9</button>
-            <button class="num zero">0</button>
-            <button class="igual op">=</button>
-        </div>
-        <div class="operacoes">
-            <button class="sum op">+</button>
-            <button class="sub op">-</button>
-            <button class="divi op">/</button>
-            <button class="mult op">*</button>
-        </div>
-        
+            <div class="teclas__num">
+
+                <button class="clear op" onclick="clean()">C</button>
+                <button class="backsp op" onclick="backs()"><-</button>
+                        <button class="perc op">%</button>
+                        <button class="divi op" onclick="insert('/')">/</button>
+                        <button class="num" onclick="insert('1')">1</button>
+                        <button class="num" onclick="insert('2')">2</button>
+                        <button class="num" onclick="insert('3')">3</button>
+                        <button class="mult op" onclick="insert('*')">*</button>
+                        <button class="num" onclick="insert('4')">4</button>
+                        <button class="num" onclick="insert('5')">5</button>
+                        <button class="num" onclick="insert('6')">6</button>
+                        <button class="sub op" onclick="insert('-')">-</button>
+                        <button class="num" onclick="insert('7')">7</button>
+                        <button class="num" onclick="insert('8')">8</button>
+                        <button class="num" onclick="insert('9')">9</button>
+                        <button class="sum op" onclick="insert('+')">+</button>
+                        <button class="num" onclick="insert('.')">.</button>
+                        <button class="num zero" onclick="insert('0')">0</button>
+                        <button class="igual op" onclick="result()">=</button>           
             
-        
+        </div>
     </div>
-</div>
+    <script src="main.js"></script>
 </body>
+
 </html>
